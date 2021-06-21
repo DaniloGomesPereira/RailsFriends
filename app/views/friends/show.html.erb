@@ -1,0 +1,25 @@
+<div class="card" style="width: 18rem;">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><p>
+  <strong>Primeiro nome:</strong>
+  <%= @friend.first_name %>
+</p></li>
+    <li class="list-group-item"><p>
+  <strong>Último nome:</strong>
+  <%= @friend.last_name_string %>
+</p></li>
+    <li class="list-group-item"><p>
+  <strong>Telefone:</strong>
+  <%= @friend.phone %>
+</p></li>
+ <li class="list-group-item"><p>
+  <strong>Twitter:</strong>
+  <%= @friend.twitter %>
+</p>
+  </ul>
+</div>
+<br/>
+
+<%= link_to 'Editar', edit_friend_path(@friend), class:"btn btn-success" %> ||
+<%= link_to 'Voltar', friends_path, class:"btn btn-success" %> || 
+<%= link_to 'Apagar', @friend, method: :delete, data: { confirm: 'Tá ligado que vai apagar esse camarada, né?!' }, class:"btn btn-danger" %>

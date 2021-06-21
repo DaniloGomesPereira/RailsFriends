@@ -1,0 +1,7 @@
+<h1>Editando Miguxos!</h1>
+<br/>
+<%= render 'form', friend: @friend %>
+<br/>
+<%= link_to 'Mostrar', @friend, class:'btn btn-primary' %> |
+<%= link_to 'Voltar', friends_path, class:'btn btn-primary' %> | 
+<%= link_to 'Apagar', @friend, method: :delete, data: { confirm: 'Tá ligado que vai apagar esse camarada, né?!' }, class:"btn btn-danger" %>
